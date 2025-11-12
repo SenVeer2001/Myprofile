@@ -3,12 +3,22 @@ import { useState } from "react";
 import bef from "../../public/BEF_image.png"
 import tavel from "../../public/travel_wafers_image.png"
 import cougar from "../../public/cougar_image.png"
+import technopediasoft from "../../public/technopediasoft.png"
 
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
+      
+      {
+      title: "Technopedia Software Pvt. Ltd.",
+      description: "At Technopedia, we transform ideas into powerful digital solutions. Our passion for innovation drives us to create cutting-edge applications that define the future of technology.",
+      image: technopediasoft ,
+      tags: ["Nextjs", "Node.js", "MongoDB", "Express", "NextAuth","Tailwind CSS","TypeScript"],
+      liveLink: "https://technopediasoft.com/",
+      githubLink: ""
+    },
     {
       title: "BEF Models",
       description: "BEF helps models find the right opportunities to grow in the fashion and modeling industry.",
